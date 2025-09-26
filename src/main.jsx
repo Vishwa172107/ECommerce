@@ -27,7 +27,8 @@ createRoot(document.getElementById('root')).render(
                     <Route path="/unauthorized" element={<UnauthorizedPage />} />
 
                     {/* Main App Routes */}
-                    <Route path="/" element={<Landing />} />
+                    {/* <Route path="/" element={<Landing />} /> */}
+                    <Route path="/" element={<Navigate to="/admin/login" replace />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/dash" element={<Shop />} />
 
